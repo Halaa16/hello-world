@@ -1,2 +1,4 @@
 # hello-world
-my new git-repository
+This is my test git-repository
+
+HELLO! I like coding.
