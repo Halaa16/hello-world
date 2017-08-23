@@ -39,7 +39,18 @@ $my_array = array("Dog","Cat","Horse");
 list($a, $b, $c) = $my_array;
 echo "I have several animals, a $a, a $b and a $c.";
 -------------------------------------------------------------------------------------------------------------------------------
+PDO::quote возвращает заданное значение в кавычках ('..')
+<?php
+$conn = new PDO('sqlite:/home/lynn/music.sql3');
 
+/* Simple string */
+$string = 'Nice';
+print "Unquoted string: $string\n";
+print "Quoted string: " . $conn->quote($string) . "\n";
+?>
+Результат выполнения данного примера:
+Unquoted string: Nice
+Quoted string: 'Nice'
 
 -------------------------------------------------------------------------------------------------------------------------------
 
